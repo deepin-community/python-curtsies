@@ -1,5 +1,188 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-curtsies (0.4.1-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version 0.4.1
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 05 Oct 2022 23:51:53 +0200
+
+python-curtsies (0.4.0-1) unstable; urgency=medium
+
+  * New upstream version 0.4.0
+  * debian/control:
+    - Switch to python3-blessed
+    - Bump Standards-Version
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 28 Aug 2022 22:49:17 +0200
+
+python-curtsies (0.3.10-1) unstable; urgency=medium
+
+  * New upstream version 0.3.10
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 10 Oct 2021 19:28:20 +0200
+
+python-curtsies (0.3.7-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster
+
+  [ Sebastian Ramacher ]
+  * New upstream release
+  * debian/control:
+    - Bump Standards-Version
+    - Remove manual dependency on python3-blessings
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 27 Sep 2021 18:48:40 +0200
+
+python-curtsies (0.3.5-4) unstable; urgency=medium
+
+  * debian/rules: Set LC_ALL=C.UTF-8 for tests
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 14 Feb 2021 16:52:27 +0100
+
+python-curtsies (0.3.5-3) unstable; urgency=medium
+
+  * debian/patches: Revert "Continue to build with python3-wcwidth until
+    python3-cwcwidth is available"
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 04 Feb 2021 00:41:36 +0100
+
+python-curtsies (0.3.5-2) unstable; urgency=medium
+
+  * debian/tests: Add autopkgtests
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Tue, 02 Feb 2021 10:09:29 +0100
+
+python-curtsies (0.3.5-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control:
+    - Remove python3-mock from Build-Depends
+    - debian/control: Bump Standard-Version
+  * debian/: Test with pytest
+  * debian/patches: Continue to use wcwidth until cwcwidth is available
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 27 Jan 2021 23:14:02 +0100
+
+python-curtsies (0.3.4-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 19 Jul 2020 16:06:45 +0200
+
+python-curtsies (0.3.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 11 Jul 2020 10:17:32 +0200
+
+python-curtsies (0.3.1-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+
+  [ Sebastian Ramacher ]
+  * debian/control:
+    - Bump Standards-Version
+    - Drop python3-pypandoc from Build-Depends
+      It doesn't make a difference anyway.
+    - Bump debhelper compat to 13
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Fri, 12 Jun 2020 12:04:48 +0200
+
+python-curtsies (0.3.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/patches: Remove, included upstream
+  * debian/: Remove Python 2 support (Closes: #937680)
+  * debian/control:
+    - Bump Standards-Version
+    - Set RRR: no
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 04 Jan 2020 19:16:54 +0100
+
+python-curtsies (0.3.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 06 Jul 2019 13:12:11 +0200
+
+python-curtsies (0.3.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/: Bump debhelper compat to 12.
+  * debian/control:
+    - Bump Standards-Version.
+    - Add python-typing to (Build-)Depends.
+  * debian/patches: Only require typing before Python 3.5.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Wed, 03 Apr 2019 21:07:53 +0200
+
+python-curtsies (0.2.12-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Move to salsa.debian.org.
+    - Bump Standards-Version.
+    - Update Homepage.
+  * debian/copyright: Update copyright years.
+  * debian/: Bump debhelper compat to 11.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 12 Feb 2018 21:20:09 +0100
+
+python-curtsies (0.2.11-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Tue, 01 Nov 2016 14:14:50 +0100
+
+python-curtsies (0.2.10-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 10 Oct 2016 20:28:23 +0200
+
+python-curtsies (0.2.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Add python(3)-pypandoc to Build-Depends.
+    - Bump Standards-Version.
+    - Update Vcs-*.
+  * debian/clean: Clean egg-info.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sat, 10 Sep 2016 13:46:34 +0200
+
+python-curtsies (0.2.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add python(3)-wcwidth to Build-Depends.
+  * debian/patches: Removed, integrated upstream.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 18 Jan 2016 23:10:20 +0100
+
+python-curtsies (0.1.22-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches/Check-isatty-instead.patch: Fix FTBFS if no terminal
+    present. (Closes: #806480)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 11 Jan 2016 20:29:43 +0100
+
+python-curtsies (0.1.19-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Sun, 26 Apr 2015 19:38:23 +0200
+
+python-curtsies (0.1.19-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/clean: Removed, no longer needed.
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Mon, 09 Mar 2015 22:56:08 +0100
+
+python-curtsies (0.1.18-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #778590)
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Tue, 17 Feb 2015 04:36:34 +0100
